@@ -45,7 +45,7 @@ const BenefitsSection = () => {
   return (
     <div className="bg-blue-950">
       <section
-        id="benefits"
+        id="keunggulan"
         className="flex flex-col items-center justify-center min-h-screen p-8 mx-auto max-w-screen-2xl"
       >
         <h2 className="mb-4 text-3xl font-bold text-center text-white">

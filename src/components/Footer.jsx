@@ -11,12 +11,12 @@ import {
 const Footer = () => {
   const contactLinks = [
     {
-      href: "https://api.whatsapp.com/send?phone=6283856566126&text=Halo%2C%20saya%20ingin%20menanyakan%20tentang%20GCG%20Scola",
+      href: "https://api.whatsapp.com/send?phone=6281511001239&text=Halo%2C%20saya%20ingin%20menanyakan%20tentang%20GCG%20Scola",
       text: "WhatsApp : +6281511001239",
       icon: <FaWhatsapp className="text-gray-800" />,
     },
     {
-      href: "https://api.whatsapp.com/send?phone=6283856566126&text=Halo%2C%20saya%20ingin%20menanyakan%20tentang%20GCG%20Scola",
+      href: "https://api.whatsapp.com/send?phone=622138741038&text=Halo%2C%20saya%20ingin%20menanyakan%20tentang%20GCG%20Scola",
       text: "WhatsApp : +622138741038",
       icon: <FaWhatsapp className="text-gray-800" />,
     },
@@ -29,7 +29,7 @@ const Footer = () => {
 
   const socialMediaLinks = [
     {
-      href: "https://www.instagram.com/gcg.id",
+      href: "https://www.instagram.com/gcg.scola.id",
       icon: <FaInstagram className="text-gray-800" />,
     },
     {

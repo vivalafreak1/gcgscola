@@ -4,6 +4,8 @@ import logo from "../assets/logo.webp";
 
 const NAV_LINKS = [
   { href: "#tentang", label: "Tentang" },
+  { href: "#keunggulan", label: "Keunggulan" },
+  { href: "#fitur", label: "Fitur" },
   { href: "#kontak", label: "Kontak" },
   { href: "#faq", label: "FAQ" },
 ];

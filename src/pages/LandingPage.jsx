@@ -2,6 +2,7 @@ import React from "react";
 import school from "../assets/school.webp";
 import logo from "../assets/logo.webp";
 import BenefitsSection from "../components/BenefitsSection";
+import FeaturesSection from "../components/FeaturesSection";
 
 export default function () {
   return (
@@ -80,27 +81,8 @@ export default function () {
       {/* Benefits Section */}
       <BenefitsSection />
 
-      {/* Events Section */}
-      <section id="events" className="py-16 bg-gray-100">
-        <div className="max-w-screen-xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold text-blue-900">
-            Upcoming Events
-          </h2>
-          <div className="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="p-4 bg-white shadow-lg rounded-lg">
-              <img
-                src="https://picsum.photos/400/300?random=5"
-                alt="Event 1"
-                className="w-full h-40 object-cover rounded-t-lg"
-              />
-              <h3 className="mt-4 text-xl font-bold text-blue-900">
-                Science Fair 2024
-              </h3>
-              <p className="mt-2 text-gray-700">January 15, 2024</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Features Section */}
+      <FeaturesSection />
 
       {/* Contact Section */}
       <section id="contact" className="py-16 text-center">

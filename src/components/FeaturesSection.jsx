@@ -75,7 +75,7 @@ const FeaturesSection = () => {
       id="fitur"
       className="flex flex-col items-center justify-center min-h-screen p-8 mx-auto max-w-screen-2xl bg-white"
     >
-      <h1 className="mb-16 text-5xl font-bold text-center text-black">
+      <h1 className="mt-16 mb-16 text-5xl font-bold text-center text-black">
         Fitur Utama GCG Scola
       </h1>
 
@@ -95,7 +95,7 @@ const FeaturesSection = () => {
           href="https://api.whatsapp.com/send?phone=6281511001239&text=Halo%2C%20saya%20ingin%20menanyakan%20tentang%20GCG%20Scola"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-6 py-3 text-black border-2 border-black rounded-lg hover:bg-blue-600 focus:outline-none transition-colors duration-300"
+          className="hover:text-white px-6 py-3 text-black border-2 border-black rounded-lg hover:bg-blue-600 focus:outline-none transition-colors duration-300"
         >
           Pelajari lebih lanjut
         </a>

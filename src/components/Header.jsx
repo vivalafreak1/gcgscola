@@ -6,8 +6,8 @@ const NAV_LINKS = [
   { href: "#tentang", label: "Tentang" },
   { href: "#keunggulan", label: "Keunggulan" },
   { href: "#fitur", label: "Fitur" },
+  { href: "#portal", label: "Portal" },
   { href: "#kontak", label: "Kontak" },
-  { href: "#faq", label: "FAQ" },
 ];
 
 const WHATSAPP_LINK = {
@@ -35,7 +35,7 @@ const Header = () => {
         </div>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex items-center space-x-8 text-blue-950">
+        <div className="items-center hidden space-x-8 md:flex text-blue-950">
           {NAV_LINKS.map(({ href, label }) => (
             <a key={href} href={href} className="hover:text-blue-500">
               {label}
@@ -43,7 +43,7 @@ const Header = () => {
           ))}
           <a
             href={WHATSAPP_LINK.href}
-            className="px-4 py-2 font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 hover:shadow-md transition-transform transform hover:scale-105"
+            className="px-4 py-2 font-semibold text-white transition-transform transform bg-blue-500 rounded-lg hover:bg-blue-600 hover:shadow-md hover:scale-105"
           >
             {WHATSAPP_LINK.label}
           </a>
@@ -94,7 +94,7 @@ const Header = () => {
             <a
               href={WHATSAPP_LINK.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block px-4 py-2 font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 hover:shadow-md transition-transform transform hover:scale-105"
+              className="block px-4 py-2 font-semibold text-white transition-transform transform bg-blue-500 rounded-lg hover:bg-blue-600 hover:shadow-md hover:scale-105"
             >
               {WHATSAPP_LINK.label}
             </a>

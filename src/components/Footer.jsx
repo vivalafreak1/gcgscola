@@ -29,7 +29,7 @@ const Footer = () => {
 
   const socialMediaLinks = [
     {
-      href: "https://www.instagram.com/gcg.scola.id",
+      href: "https://www.instagram.com/gcg.id",
       icon: <FaInstagram className="text-gray-800" />,
     },
     {

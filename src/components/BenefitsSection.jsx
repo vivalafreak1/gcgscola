@@ -6,9 +6,9 @@ import {
   FaFileAlt,
   FaPlus,
 } from "react-icons/fa";
+import schoolillu from "../assets/school-illu.png";
 
 const BenefitsSection = () => {
-  // State to control which card is clicked
   const [selectedBenefit, setSelectedBenefit] = useState(null);
 
   const benefits = [
@@ -31,7 +31,7 @@ const BenefitsSection = () => {
       icon: <FaRegClock size={24} />,
       title: "Menghemat Waktu dan Biaya",
       description:
-        "GCG Scola membantu institusi pendidikan menghemat waktu dan biaya dengan mengotomatisasi proses administrasi dan manajemen. Sistem ini mengurangi beban kerja manual, mempercepat pengambilan keputusan, dan menurunkan biaya operasional berkat efisiensi yang ditawarkan oleh sistem",
+        "GCG Scola membantu institusi pendidikan menghemat waktu dan biaya dengan mengotomatisasi proses administrasi dan manajemen. Sistem ini mengurangi beban kerja manual, mempercepat pengambilan keputusan, dan menurunkan biaya operasional berkat efisiensi yang ditawarkan oleh sistem.",
     },
     {
       id: 4,
@@ -46,66 +46,76 @@ const BenefitsSection = () => {
     <div className="bg-blue-950">
       <section
         id="keunggulan"
-        className="flex flex-col items-center justify-center min-h-screen p-8 mx-auto max-w-screen-2xl"
+        className="flex flex-col items-center justify-between min-h-screen gap-8 p-8 mx-auto lg:flex-row max-w-screen-2xl"
       >
-        <h2 className="mb-4 text-3xl font-bold text-center text-white">
-          Keunggulan GCG Scola
-        </h2>
-        <p className="mb-12 text-center text-white">
-          Nikmati akses keunggulan kami untuk solusi dalam meningkatkan
-          efisiensi sekolah anda.
-        </p>
-        <div className="flex flex-col items-center gap-8">
-          {benefits.map((benefit) => (
-            <div
-              key={benefit.id}
-              className="flex flex-col justify-between w-full sm:w-[500px] lg:w-[600px] p-6 border bg-white rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer"
-              onClick={() =>
-                setSelectedBenefit(
-                  selectedBenefit === benefit.id ? null : benefit.id
-                )
-              }
-            >
-              <div className="flex items-center justify-between">
-                <div className="flex items-center justify-center w-12 h-12 mr-4 text-white bg-blue-500 rounded-full">
-                  {benefit.icon}
-                </div>
-                <div className="flex-1">
-                  <h3 className="mb-2 text-xl font-semibold">
-                    {benefit.title}
-                  </h3>
+        {/* Column 1: Benefits */}
+        <div className="flex flex-col flex-1 gap-4">
+          <h2 className="mb-4 text-3xl font-bold text-center text-white lg:text-left">
+            Keunggulan GCG Scola
+          </h2>
+          <p className="mb-8 text-center text-white lg:text-left">
+            Nikmati akses keunggulan kami untuk solusi dalam meningkatkan
+            efisiensi sekolah anda.
+          </p>
+          <div className="flex flex-col items-center gap-8 lg:items-start">
+            {benefits.map((benefit) => (
+              <div
+                key={benefit.id}
+                className="flex flex-col justify-between w-full p-6 transition-all duration-300 transform bg-white border rounded-lg shadow-lg cursor-pointer hover:scale-105 hover:shadow-xl"
+                onClick={() =>
+                  setSelectedBenefit(
+                    selectedBenefit === benefit.id ? null : benefit.id
+                  )
+                }
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-center w-12 h-12 mr-4 text-white bg-blue-500 rounded-full">
+                    {benefit.icon}
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="mb-2 text-xl font-semibold">
+                      {benefit.title}
+                    </h3>
+                    <div
+                      className={`overflow-hidden transition-all duration-500 ${
+                        selectedBenefit === benefit.id
+                          ? "max-h-[200px] ease-in-out"
+                          : "max-h-0 ease-in-out"
+                      }`}
+                    >
+                      <p className="text-gray-600">{benefit.description}</p>
+                    </div>
+                  </div>
                   <div
-                    className={`overflow-hidden transition-all duration-500 ${
-                      selectedBenefit === benefit.id
-                        ? "max-h-[200px] ease-in-out"
-                        : "max-h-0 ease-in-out"
+                    className={`text-xl text-gray-500 transition-transform duration-500 ${
+                      selectedBenefit === benefit.id ? "rotate-45" : ""
                     }`}
                   >
-                    <p className="text-gray-600">{benefit.description}</p>
+                    <FaPlus />
                   </div>
                 </div>
-                <div
-                  className={`text-xl text-gray-500 transition-transform duration-500 ${
-                    selectedBenefit === benefit.id ? "rotate-45" : ""
-                  }`}
-                >
-                  <FaPlus />
-                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className="flex justify-center mt-6 lg:justify-start">
+            <a
+              href="https://api.whatsapp.com/send?phone=6283856566126&text=Halo%2C%20saya%20ingin%20menanyakan%20tentang%20GCG%20Scola"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 text-white transition-colors duration-300 border-2 border-white rounded-lg hover:bg-blue-600 hover:text-white focus:outline-none"
+            >
+              Pelajari lebih lanjut
+            </a>
+          </div>
         </div>
 
-        {/* Consult Button */}
-        <div className="flex justify-center mt-6">
-          <a
-            href="https://api.whatsapp.com/send?phone=6283856566126&text=Halo%2C%20saya%20ingin%20menanyakan%20tentang%20GCG%20Scola"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 text-white border-2 border-white rounded-lg hover:bg-blue-600 hover:text-white focus:outline-none transition-colors duration-300"
-          >
-            Pelajari lebih lanjut
-          </a>
+        {/* Column 2: Image */}
+        <div className="flex items-center justify-center flex-1">
+          <img
+            src={schoolillu}
+            alt="Keunggulan GCG Scola"
+            className="w-full h-auto max-w-md rounded-lg shadow-lg lg:max-w-lg"
+          />
         </div>
       </section>
     </div>

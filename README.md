@@ -12,6 +12,6 @@ Currently, two official plugins are available:
 
 # Installation
 - Download file
-- type 'npm i'
-- Then 'npm run dev' for running in development
-- For production 'npm rujn build'
+- type `npm i`
+- Then `npm run dev` for running in development
+- For production `npm rujn build`

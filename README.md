@@ -14,4 +14,4 @@ Currently, two official plugins are available:
 - Download file
 - type `npm i`
 - Then `npm run dev` for running in development
-- For production `npm rujn build`
+- For production `npm run build`

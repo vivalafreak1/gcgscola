@@ -4,6 +4,7 @@ import LandingPage from "./pages/LandingPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NotFoundPage from "./pages/NotFoundPage";
+import BackToTopButton from "./components/BackToTopButton";
 
 const App = () => (
   <Router>
@@ -16,6 +17,7 @@ const App = () => (
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
+      <BackToTopButton />
     </div>
   </Router>
 );

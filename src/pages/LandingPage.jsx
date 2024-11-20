@@ -1,8 +1,9 @@
 import React from "react";
 import school from "../assets/school.webp";
 import logo from "../assets/logo.webp";
+import BenefitsSection from "../components/BenefitsSection";
 
-const LandingPage = () => {
+export default function () {
   return (
     <div className="LandingPage">
       {/* Hero Section */}
@@ -76,54 +77,8 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Facilities Section */}
-      <section id="facilities" className="py-16">
-        <div className="max-w-screen-xl mx-auto">
-          <h2 className="text-3xl font-semibold text-blue-900 text-center">
-            Facilities
-          </h2>
-          <div className="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="p-4 bg-white shadow-lg rounded-lg">
-              <img
-                src="https://picsum.photos/400/300?random=2"
-                alt="Library"
-                className="w-full h-40 object-cover rounded-t-lg"
-              />
-              <h3 className="mt-4 text-xl font-bold text-blue-900">Library</h3>
-              <p className="mt-2 text-gray-700">
-                A state-of-the-art library with a vast collection of books and
-                resources to foster learning.
-              </p>
-            </div>
-            <div className="p-4 bg-white shadow-lg rounded-lg">
-              <img
-                src="https://picsum.photos/400/300?random=3"
-                alt="Science Labs"
-                className="w-full h-40 object-cover rounded-t-lg"
-              />
-              <h3 className="mt-4 text-xl font-bold text-blue-900">
-                Science Labs
-              </h3>
-              <p className="mt-2 text-gray-700">
-                Modern science laboratories equipped for practical experiments.
-              </p>
-            </div>
-            <div className="p-4 bg-white shadow-lg rounded-lg">
-              <img
-                src="https://picsum.photos/400/300?random=4"
-                alt="Sports Facilities"
-                className="w-full h-40 object-cover rounded-t-lg"
-              />
-              <h3 className="mt-4 text-xl font-bold text-blue-900">
-                Sports Facilities
-              </h3>
-              <p className="mt-2 text-gray-700">
-                Comprehensive sports facilities to encourage physical fitness.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Benefits Section */}
+      <BenefitsSection />
 
       {/* Events Section */}
       <section id="events" className="py-16 bg-gray-100">
@@ -179,6 +134,4 @@ const LandingPage = () => {
       </section>
     </div>
   );
-};
-
-export default LandingPage;
+}

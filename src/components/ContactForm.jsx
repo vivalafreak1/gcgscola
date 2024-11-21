@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -37,26 +36,12 @@ const ContactForm = () => {
     }));
   };
 
+  // Static handleSubmit function, no email sending logic
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    emailjs
-      .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        formData,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          alert("Email sent successfully!");
-          setFormData({ name: "", email: "", phone: "", message: "" }); // Reset form
-        },
-        (error) => {
-          alert("Failed to send email. Please try again.");
-          console.error("EmailJS error:", error);
-        }
-      );
+    alert("This is a static form for preview purposes.");
+    // Optionally, you can reset the form after submission
+    setFormData({ name: "", email: "", phone: "", message: "" });
   };
 
   return (

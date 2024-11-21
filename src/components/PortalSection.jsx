@@ -42,15 +42,12 @@ const PortalSection = () => {
   ];
 
   return (
-    <div className="bg-blue-950">
-      <section
-        id="portal"
-        className="flex flex-col items-center justify-center max-w-screen-md min-h-screen p-8 mx-auto"
-      >
-        <h1 className="mt-8 mb-16 text-4xl font-bold text-center text-white">
+    <div className="bg-blue-950" id="portal">
+      <section className="flex flex-col items-center justify-center max-w-screen-md min-h-screen p-8 mx-auto">
+        <h1 className="mt-16 mb-16 text-4xl font-bold text-center text-white">
           Portal Pengguna
         </h1>
-        <div className="relative flex flex-col items-center w-full max-w-lg gap-8">
+        <div className="relative flex flex-col items-center w-full max-w-lg gap-8 mb-20">
           {portals.map((portal, index) => (
             <div key={index} className="flex items-start w-full">
               {/* Icon and Progress Line Container */}
@@ -77,18 +74,6 @@ const PortalSection = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Consult Button */}
-        <div className="flex justify-center mt-12">
-          <a
-            href="https://api.whatsapp.com/send?phone=6281511001239&text=Halo%2C%20saya%20ingin%20menanyakan%20tentang%20GCG%20Scola"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 text-white transition-colors duration-300 border-2 border-white rounded-lg hover:bg-blue-600 focus:outline-none"
-          >
-            Pelajari lebih lanjut
-          </a>
         </div>
       </section>
     </div>

@@ -97,16 +97,6 @@ const BenefitsSection = () => {
               </div>
             ))}
           </div>
-          <div className="flex justify-center mt-6 lg:justify-start">
-            <a
-              href="https://api.whatsapp.com/send?phone=6283856566126&text=Halo%2C%20saya%20ingin%20menanyakan%20tentang%20GCG%20Scola"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 text-white transition-colors duration-300 border-2 border-white rounded-lg hover:bg-blue-600 hover:text-white focus:outline-none"
-            >
-              Pelajari lebih lanjut
-            </a>
-          </div>
         </div>
 
         {/* Column 2: Image */}

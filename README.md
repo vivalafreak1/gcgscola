@@ -15,3 +15,11 @@ Currently, two official plugins are available:
 - type `npm i`
 - Then `npm run dev` for running in development
 - For production `npm run build`
+
+# Environment Variables
+
+```
+VITE_EMAILJS_SERVICE_ID
+VITE_EMAILJS_TEMPLATE_ID
+VITE_EMAILJS_PUBLIC_KEY
+```

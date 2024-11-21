@@ -73,7 +73,7 @@ const FeaturesSection = () => {
   return (
     <section
       id="fitur"
-      className="flex flex-col items-center justify-center min-h-screen p-8 mx-auto max-w-screen-2xl bg-white"
+      className="flex flex-col items-center justify-center min-h-screen p-8 mx-auto mb-8 bg-white max-w-screen-2xl"
     >
       <h1 className="mt-16 mb-16 text-5xl font-bold text-center text-black">
         Fitur Utama GCG Scola
@@ -90,16 +90,16 @@ const FeaturesSection = () => {
         ))}
       </div>
 
-      <div className="flex justify-center mt-6">
+      {/*<div className="flex justify-center mt-6">
         <a
           href="https://api.whatsapp.com/send?phone=6281511001239&text=Halo%2C%20saya%20ingin%20menanyakan%20tentang%20GCG%20Scola"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-white px-6 py-3 text-black border-2 border-black rounded-lg hover:bg-blue-600 focus:outline-none transition-colors duration-300"
+          className="px-6 py-3 text-black transition-colors duration-300 border-2 border-black rounded-lg hover:text-white hover:bg-blue-600 focus:outline-none"
         >
           Pelajari lebih lanjut
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };

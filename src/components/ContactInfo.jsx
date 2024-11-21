@@ -30,7 +30,7 @@ const ContactInfo = () => {
         <div className="flex items-center justify-center p-2 text-white rounded bg-blue-950">
           <FaEnvelope />
         </div>
-        <span>Email: sales@gcgsalus.id</span>
+        <span>Email: sales@gcgscola.id</span>
       </div>
 
       <h2 className="pb-2 mb-4 text-2xl font-bold border-b-2 border-blue-950">
